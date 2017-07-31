@@ -52,8 +52,8 @@ namespace Nexcom.FrontEnd_Alerta_27_S10_ITE_Proyectos
             message.IsBodyHtml = true;
             SmtpClient client = new SmtpClient("192.168.100.2")
             {
-                Port = 25,
-                Host = "192.168.100.2"
+                Port = 25, //port number
+                Host = "192.168.100.2" //server address
             };
             try
             {
