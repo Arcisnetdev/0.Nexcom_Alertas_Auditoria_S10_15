@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EA4A1620-E0E3-4D18-A07F-75588BAF1B0B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Nexcom.Backend_Alerta_S10</RootNamespace>
+    <AssemblyName>Nexcom.Backend_Alerta_S10</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design, Version=4.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter">
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5">
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Configuration.Design.HostAdapterV5.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime">
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Configuration.DesignTime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Data">
+      <HintPath>..\..\0.Library_DotNet\Microsoft.Practices.EnterpriseLibrary.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\BusinessData\BeImplData.cs" />
+    <Compile Include="Business\BusinessData\BeImplDataInterface.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroCc.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroCcs.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroNDoc.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroNDocs.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroProS.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroProSs.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroProveedor.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroProveedors.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroUser.cs" />
+    <Compile Include="Business\BusinessLogicMasivoC\LgImplVerifNroUsers.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplOSNoFC.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplOSNoFCs.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplPedServApNoOS.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplPedServApNoOSs.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplPrestamoRecurso.cs" />
+    <Compile Include="Business\BusinessLogicPedServ\LgImplPrestamoRecursos.cs" />
+    <Compile Include="Business\BusinessLogicS10\LgImplCabeceraS10.cs" />
+    <Compile Include="Business\BusinessLogicS10\LgImplCabeceraS10s.cs" />
+    <Compile Include="Business\BusinessLogicS10\LgImplDetalleS10.cs" />
+    <Compile Include="Business\BusinessLogicS10\LgImplDetalleS10s.cs" />
+    <Compile Include="Business\BusinessLogicSalary\LgImplAuditoriaP.cs" />
+    <Compile Include="Business\BusinessLogicSalary\LgImplAuditoriaPs.cs" />
+    <Compile Include="Business\BusinessLogicSalary\LgImplAuditoriaVaca.cs" />
+    <Compile Include="Business\BusinessLogicSalary\LgImplAuditoriaVacas.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditDTechoA.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditDTechoAs.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditRecursoS10.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditRecursoS10s.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoA2.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoA2s.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor2.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor2s.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor3.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor3s.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor4.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedor4s.cs" />
+    <Compile Include="Business\BusinessLogicCom\LgImplComedors.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoProy.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoProys.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoRecNoPre.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplAuditTechoRecNoPres.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplGasFacturar.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplGasFacturars.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplGuiaAlmacenD.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplGuiaAlmacenDs.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplKardexCeroNegativo.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplKardexCeroNegativos.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcCreadasAyer.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcCreadasAyer2.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcCreadasAyer2s.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcCreadasAyers.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcModifAyer.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcModifAyer2.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcModifAyer2s.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcModifAyers.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcsFacturar.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplOcsFacturars.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPedApSinOc2D.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPedApSinOc2Ds.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPedCreEnDia.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPedCreEnDias.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPrecioOrdenCompra.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplPrecioOrdenCompras.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecApro7moDia.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecApro7moDias.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecPedExcedenTecho.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecPedExcedenTechos.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecursoCeroNegativo.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplRecursoCeroNegativos.cs" />
+    <Compile Include="Business\BusinessLogicRO\LgImplResultOperC.cs" />
+    <Compile Include="Business\BusinessLogicRO\LgImplResultOperCs.cs" />
+    <Compile Include="Business\BusinessLogicRO\LgImplResultOperD.cs" />
+    <Compile Include="Business\BusinessLogicRO\LgImplResultOperDs.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTansferenciaGgTo.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTansferenciaGgTos.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTransferencia.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTransferencias.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTansferenciaGg.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplSegTansferenciaGgs.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplTechoP.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplTechoP2.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplTechoP2s.cs" />
+    <Compile Include="Business\BusinessLogic\LgImplTechoPs.cs" />
+    <Compile Include="Business\BusinessObject\ObImplControl.cs" />
+    <Compile Include="Business\BusinessUtils\BeImplUtil.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
