@@ -33,12 +33,12 @@ namespace Nexcom.FrontEnd_Alerta_S10_Techo_cs
             message.To.Add("ralegria@nexcom.com.pe");
             message.To.Add("ycontreras@nexcom.com.pe");
             //message.To.Add("ecoasaca@nexcom.com.pe");
-            message.CC.Add("lperez@nexcom.com.pe");
+            //message.CC.Add("lperez@nexcom.com.pe");
             message.CC.Add("odepando@nexcom.com.pe");
             message.CC.Add("jgomez@nexcom.com.pe");
             message.CC.Add("mbuchanan@nexcom.com.pe");
-            message.CC.Add("scelestino@nexcom.com.pe");
-            message.CC.Add("jcahuana@nexcom.com.pe");
+            //message.CC.Add("scelestino@nexcom.com.pe");
+            //message.CC.Add("jcahuana@nexcom.com.pe");
 
             message.From = new MailAddress("noresponder@nexcom.com.pe", "Verificar excedente de presupuesto segun grupo de recursos en el S10 ERP.", Encoding.UTF8);
             message.Subject = "Alerta de Control -> Verificar excedente de presupuesto segun grupo de recursos en el S10 ERP.";
