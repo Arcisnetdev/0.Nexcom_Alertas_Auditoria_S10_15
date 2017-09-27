@@ -30,8 +30,8 @@ namespace Nexcom.FrontEnd_Alerta_S10_Techo_cs
         {
             MailMessage message = new MailMessage();
             message.To.Add("arosales@nexcom.com.pe");
-            message.To.Add("practicante4_costos@nexcom.com.pe");
-            message.To.Add("practicante3_costos@nexcom.com.pe");
+            message.To.Add("ralegria@nexcom.com.pe");
+            message.To.Add("ycontreras@nexcom.com.pe");
             //message.To.Add("ecoasaca@nexcom.com.pe");
             message.CC.Add("lperez@nexcom.com.pe");
             message.CC.Add("odepando@nexcom.com.pe");
