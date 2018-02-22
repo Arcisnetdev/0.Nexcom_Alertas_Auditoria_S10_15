@@ -31,9 +31,9 @@ namespace Nexcom.FrontEnd_Alerta_S10_Transferencia_cs
             MailMessage message = new MailMessage();
             //Lista para enviar a Operaciones
             message.Bcc.Add("arosales@nexcom.com.pe");
-            message.To.Add("jalvarez@nexcom.com.pe");
-            message.To.Add("jcahuana@nexcom.com.pe");
-            message.CC.Add("almacen@nexcom.com.pe");
+            //message.To.Add("jalvarez@nexcom.com.pe");
+            //message.To.Add("jcahuana@nexcom.com.pe");
+            //message.CC.Add("almacen@nexcom.com.pe");
 
             //Lista para enviar a GAF
             //message.To.Add("lperez@nexcom.com.pe");
