@@ -32,8 +32,8 @@ namespace Nexcom.FrontEnd_Alerta_S10_ResultadOperat_cs
             MailMessage message = new MailMessage();
             //Lista para enviar a Operaciones
             message.Bcc.Add("arosales@nexcom.com.pe");
-			message.Bcc.Add("external_s10@nexcom.com.pe");
-			message.To.Add("ecoasaca@nexcom.com.pe");
+			//message.Bcc.Add("external_s10@nexcom.com.pe");
+			//message.To.Add("ecoasaca@nexcom.com.pe");
 
 			//Lista para enviar a GAF
 			//message.To.Add("vmelendez@nexcom.com.pe");
@@ -64,7 +64,10 @@ namespace Nexcom.FrontEnd_Alerta_S10_ResultadOperat_cs
         {
             IEnumerator enumerator;
             string str = "<html>";
-            str = ((str + "<body><center> " + "<div style='font-size:11px; font-family:Arial; text-align:left; padding:10px; width:650px;'>") + "<br><div style='padding-left:30px; padding-right:30px; text-align:justify'><strong>Estimado(a) usuario(a):</strong>" + "<br>El listado presentado a continuacion son los que deben ser corroborado en ERP S10.") + "</div><br><hr />" + "<div style='font-size:11px; font-family:Arial;padding:20px'>";
+            str = ((str + "<body><center> " + "<div style='font-size:11px; font-family:Arial; text-align:left; padding:10px; width:650px;'>") + 
+                "<br><div style='padding-left:30px; padding-right:30px; text-align:justify'><strong>Estimado(a) usuario(a):</strong>" + 
+                "<br>El listado presentado a continuacion son los que deben ser corroborado en ERP S10.") + 
+                "</div><br><hr />" + "<div style='font-size:11px; font-family:Arial;padding:20px'>";
             try
             {
                 enumerator = ((IEnumerable)ObImplControl.PoblarLgImplResultOperCSelAll()).GetEnumerator();
@@ -72,7 +75,8 @@ namespace Nexcom.FrontEnd_Alerta_S10_ResultadOperat_cs
                 {
                     IEnumerator enumerator2;
                     LgImplResultOperC current = (LgImplResultOperC)enumerator.Current;
-                    str = str + "<table cellspacing='0' cellpadding='0' width='605px'><tr><td colspan='3' width='350'></td><td  style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#C5E3ED' width='85'><strong>PRESUPUESTO</strong></td><td width='85' style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#C5E3ED'><strong>REAL</strong></td></tr>";
+                    str = str + "<table cellspacing='0' cellpadding='0' width='605px'><tr><td colspan='3' width='350'></td><td  style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#C5E3ED' width='85'><strong>PRESUPUESTO</strong></td>" +
+                        "<td width='85' style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#C5E3ED'><strong>REAL</strong></td></tr>";
                     str = str + "<tr><td  style='font-size:10px; font-family:Arial;text-align:left;font-weight: bold;border:1px solid black;background-color:#C5D5E9' colspan='3' width='350'>Proyecto:" + current.DesProyecto + "</td>";
                     str = str + "<td align='right' valign='top' style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#FFA6A6'> " + current.Presupuesto + "</td>";
                     str = str + "<td align='right' valign='top' style='font-size:10px; font-family:Arial;text-align:center;border:1px solid black;background-color:#FFA6A6'> " + current.Reall + "</td>";

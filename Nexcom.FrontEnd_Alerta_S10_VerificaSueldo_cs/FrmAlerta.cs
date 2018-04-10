@@ -174,12 +174,12 @@ namespace Nexcom.FrontEnd_Alerta_S10_VerificaSueldo_cs
         private void Envio2()
         {
             MailMessage message = new MailMessage();
-            //message.To.Add("arosales@nexcom.com.pe");
-            message.To.Add("mcastillo@nexcom.com.pe");
-            message.CC.Add("mloa@nexcom.com.pe");
-			//message.Bcc.Add("psandoval@nexcom.com.pe");
-			message.Bcc.Add("odepando@nexcom.com.pe");
-            message.Bcc.Add("mbuchanan@nexcom.com.pe");
+            message.To.Add("arosales@nexcom.com.pe");
+            //message.To.Add("mcastillo@nexcom.com.pe");
+            //message.CC.Add("mloa@nexcom.com.pe");
+            //message.Bcc.Add("psandoval@nexcom.com.pe");
+            //message.Bcc.Add("odepando@nexcom.com.pe");
+            //message.Bcc.Add("mbuchanan@nexcom.com.pe");
             message.From = new MailAddress("noresponder@nexcom.com.pe", "Auditoria Monto Sueldo", Encoding.UTF8);
             message.Subject = "Verificar Monto Sueldo del SPRING";
             message.SubjectEncoding = Encoding.UTF8;
@@ -204,8 +204,8 @@ namespace Nexcom.FrontEnd_Alerta_S10_VerificaSueldo_cs
         private void Envio3()
         {
             MailMessage message = new MailMessage();
-            //message.To.Add("arosales@nexcom.com.pe");
-            message.To.Add("mcastillo@nexcom.com.pe");
+            message.To.Add("arosales@nexcom.com.pe");
+            //message.To.Add("mcastillo@nexcom.com.pe");
             message.From = new MailAddress("noresponder@nexcom.com.pe", "Auditoria Vacaciones", Encoding.UTF8);
             message.Subject = "Vacaciones del SPRING";
             message.SubjectEncoding = Encoding.UTF8;
